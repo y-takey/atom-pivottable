@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Pivot Tableize'
+      'command': 'atom-pivottable:toggle'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'Pivot Table'
+      'submenu': [
+        {
+          'label': 'Tableize'
+          'command': 'atom-pivottable:toggle'
+        }
+      ]
+    ]
+  }
+]

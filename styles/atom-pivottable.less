@@ -1,0 +1,134 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+// Want to import pivot.css from node_modules
+// @import "node_modules/pivottable/dist/pivot.css";
+// @import "/node_modules/pivottable/dist/pivot.css";
+// @import "../node_modules/pivottable/dist/pivot.css";
+
+.atom-pivottable {
+  background-color: #E0E0E0;
+  padding: 10px;
+  font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+
+  select {
+    font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+    height: 24px;
+    font-size: 12px;
+    color: #555;
+    border-radius: 4px;
+  }
+  .title {
+    font-size: 140%;
+    color: #0091EA;
+    margin-top: 20px;
+  }
+
+  .pvtUi { color: #333; }
+
+  table.pvtTable {
+    font-size: 8pt;
+    text-align: left;
+    border-collapse: collapse;
+
+    tr th {
+      background-color: #81D4FA;
+      border: 1px solid #CDCDCD;
+      font-size: 8pt;
+      padding: 5px;
+    }
+
+    tr td {
+      color: #3D3D3D;
+      padding: 5px;
+      background-color: #FFF;
+      border: 1px solid #CDCDCD;
+      vertical-align: top;
+      text-align: right;
+    }
+
+    .pvtColLabel {text-align: center;}
+    .pvtTotalLabel {text-align: right;}
+  }
+
+  .pvtTotal, .pvtGrandTotal { font-weight: bold; }
+
+  .pvtVals { text-align: center;}
+  .pvtAggregator { margin-bottom: 5px ;}
+
+  .pvtAxisContainer, .pvtVals {
+    border: 1px solid gray;
+    background: #B3E5FC;
+    padding: 5px;
+    min-width: 20px;
+    min-height: 20px;
+
+    li {
+      padding: 8px 6px;
+      list-style-type: none;
+      cursor:move;
+    }
+
+    li.pvtPlaceholder {
+      -webkit-border-radius: 5px;
+      padding: 3px 15px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      border: 1px dashed #aaa;
+    }
+
+    li span.pvtAttr {
+      -webkit-text-size-adjust: 100%;
+      background-color: #0277BD;
+      color: #FFFFFF;
+      padding: 2px 5px;
+      white-space:nowrap;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+    }
+  }
+
+  .pvtAxisContainer.pvtUnused {
+    background: #EEE;
+  }
+
+  .pvtTriangle {
+    cursor:pointer;
+    color: #FFFFFF;
+  }
+
+  .pvtHorizList li { display: inline; }
+  .pvtVertList { vertical-align: top; }
+
+  .pvtFilteredAttribute { font-style: italic }
+
+  .pvtFilterBox {
+    z-index: 100;
+    width: 280px;
+    border: 1px solid gray;
+    background-color: #fff;
+    position: absolute;
+    padding: 20px;
+    text-align: center;
+
+    h4 { margin:0; }
+    p { margin: 1em auto; }
+    label { font-weight: normal; }
+    input[type='checkbox'] { margin-right: 5px; }
+  }
+
+  .pvtCheckContainer{
+    text-align: left;
+    overflow: scroll;
+    width: 100%;
+    max-height: 200px;
+
+    p { margin: 5px; }
+  }
+
+  .pvtRendererArea { padding: 5px;}
+}

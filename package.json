@@ -1,0 +1,25 @@
+{
+  "name": "atom-pivottable",
+  "main": "./lib/atom-pivottable",
+  "version": "0.0.0",
+  "description": "This application is atom plugin which render pivot table using your json or csv",
+  "keywords": [
+    "pivottable"
+  ],
+  "activationCommands": {
+    "atom-workspace": "atom-pivottable:toggle"
+  },
+  "repository": "https://github.com/y-takey/atom-pivottable",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "atom-space-pen-views": "^2.2.0",
+    "csv-parse": "^1.0.2",
+    "jquery-ui": "^1.10.5",
+    "json5": "^0.5.0",
+    "lodash": "^4.6.1",
+    "pivottable": "^2.0.2"
+  }
+}

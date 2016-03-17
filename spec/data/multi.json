@@ -1,0 +1,49 @@
+{
+  one: [
+    {
+      Province: "Quebec",
+      Party: "NDP",
+      Age: 21,
+      Name: "Liu, Laurin",
+      Gender: "Female"
+    },
+    {
+      Province: "Quebec",
+      Party: "Bloc Quebecois",
+      Age: 43,
+      Name: "Mourani, Maria",
+      Gender: "Female"
+    },
+    {
+      Province: "Quebec",
+      Party: "NDP",
+      Age: "",
+      Name: "Sellah, Djaouida",
+      Gender: "Female"
+    }
+  ],
+  two: [
+    {
+      foo: "Quebec",
+      bar: "NH",
+      baz: 40,
+      hoge: "Liu, Laurin",
+      fuga: "Female"
+    },
+    {
+      foo: "Quebec",
+      bar: "SSR",
+      baz: 50,
+      hoge: "Mourani, Maria",
+      fuga: "Female"
+    },
+    {
+      foo: "Quebec",
+      bar: "SSR",
+      baz: 50,
+      hoge: "Sellah, Djaouida",
+      fuga: "Female"
+    }
+  ],
+  three: "dummy"
+}
