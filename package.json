@@ -1,7 +1,7 @@
 {
   "name": "atom-pivottable",
   "main": "./lib/atom-pivottable",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "This application is atom plugin which render pivot table using your json or csv",
   "keywords": [
     "pivottable"
