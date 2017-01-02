@@ -37,11 +37,6 @@ module.exports =
           atom.packages.onDidActivatePackage =>
             @subscribeToFilePath(filePath)
 
-    serialize: ->
-      deserializer : 'PivottableView'
-      filePath     : @getPath()
-      editorId     : @editorId
-
     destroy: ->
       @editorSub.dispose()
 
