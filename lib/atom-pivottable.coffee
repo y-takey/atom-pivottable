@@ -46,7 +46,7 @@ module.exports = AtomPivottable =
       return
 
     previousActivePane = atom.workspace.getActivePane()
-    atom.workspace.open(uri, split: 'right', searchAllPanes: true).done (pivotView) ->
+    atom.workspace.open(uri, split: 'right', searchAllPanes: true).then (pivotView) ->
       if pivotView instanceof PivottableView
         pivotView.renderHTML()
         previousActivePane.activate()
