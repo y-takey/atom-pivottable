@@ -1,10 +1,10 @@
 path = require 'path'
 {CompositeDisposable, Disposable} = require 'atom'
-{$, $$$, ScrollView}  = require 'atom-space-pen-views'
+{ScrollView}  = require 'atom-space-pen-views'
 _ = require 'lodash'
 jQuery = require 'jquery'
-window.jQuery = jQuery
-require 'jquery-ui'
+window.$ = window.jQuery = jQuery
+require 'jquery-ui-dist/jquery-ui'
 pivot = require 'pivottable'
 JSON5 = require 'json5'
 csv_parse = require 'csv-parse/lib/sync'
