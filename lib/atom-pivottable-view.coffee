@@ -119,13 +119,18 @@ module.exports =
         return false
 
     parseCSV: (data)->
+      # Support CSV or TSV
       try
         data = csv_parse(data)
-        # must be having 2 rows and 2 columns
-        return [] if data.length < 2 || data[0].length < 2
-        return [{ title: "", data: data }]
       catch error
-        return false
+        try
+          data = csv_parse(data, { delimiter: "\t" })
+        catch error
+          return false
+
+      # must be having 2 rows and 2 columns
+      return [] if data.length < 2 || data[0].length < 2
+      return [{ title: "", data: data }]
 
     convertToObject: (data)->
       _.times data.length - 1, (i)->
