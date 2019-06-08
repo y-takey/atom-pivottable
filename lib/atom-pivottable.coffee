@@ -34,9 +34,6 @@ module.exports = AtomPivottable =
   deactivate: ->
     @subscriptions.dispose()
 
-  serialize: ->
-    pivottableViewState: @pivottableView.serialize()
-
   toggle: ->
     editor = atom.workspace.getActiveTextEditor()
     return unless editor?

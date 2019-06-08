@@ -13,14 +13,9 @@ module.exports =
   PIVOT_PROTOCOL: "pivot-table:"
   PivottableView: class PivottableView extends ScrollView
 
-    atom.deserializers.add(this)
-
     editorSub           : null
     onDidChangeTitle    : -> new Disposable()
     onDidChangeModified : -> new Disposable()
-
-    @deserialize: (state) ->
-      new PivottableView(state)
 
     @content: ->
       @div class: 'atom-pivottable native-key-bindings', tabindex: -1
@@ -36,11 +31,6 @@ module.exports =
         else
           atom.packages.onDidActivatePackage =>
             @subscribeToFilePath(filePath)
-
-    serialize: ->
-      deserializer : 'PivottableView'
-      filePath     : @getPath()
-      editorId     : @editorId
 
     destroy: ->
       @editorSub.dispose()
