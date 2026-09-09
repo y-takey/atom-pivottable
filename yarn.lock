@@ -10,10 +10,10 @@ atom-space-pen-views@^2.2.0:
     fuzzaldrin "^2.1.0"
     space-pen "^5.1.2"
 
-csv-parse@^4.4.3:
-  version "4.4.6"
-  resolved "https://registry.yarnpkg.com/csv-parse/-/csv-parse-4.4.6.tgz#08804dbe86037c46810d49ced77fa0e121f83b4f"
-  integrity sha512-VisC5TBBhOF+70zjrF9FOiqI2LZOhXK/vAWlOrqyqz3lLa+P8jzJ7L/sg90MHmkSY/brAXWwrmGSZR0tM5yi4g==
+csv-parse@^7.0.2:
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/csv-parse/-/csv-parse-7.0.2.tgz#76ff913d5b07d56170e071ebc788f51a21e4b17f"
+  integrity sha512-uKZghv9UmPkMVLYy//KZ9HFAIJsl7wkhoEdIL0+rhuSY9pZQlhaeGEDPIe+/w7eh81MOql8Q/9+inAGWG6ZHYA==
 
 d@1:
   version "1.0.0"
