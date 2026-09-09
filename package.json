@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "atom-space-pen-views": "^2.2.0",
-    "csv-parse": "^4.4.3",
+    "csv-parse": "^7.0.2",
     "jquery": "^3.4.1",
     "jquery-ui-dist": "^1.12.1",
     "json5": "^2.1.0",
